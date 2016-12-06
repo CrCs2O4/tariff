@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "Energie"
+permalink: /energie/
+sidebar:
+  nav: "energie"
+---
+
+{% include base_path %}
+{% capture written_label %}'None'{% endcapture %}
+
+<div class="grid__wrapper">
+{% for collection in site.collections %}
+  {% for post in collection.docs %}
+    {% unless collection.output == false or collection.label == "posts" or collection.label != "energie" %}
+      {% include archive-single.html type="grid" %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+</div>

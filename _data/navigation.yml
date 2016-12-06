@@ -1,29 +1,68 @@
 # main links
 main:
-  # - title: "Quick-Start Guide"
-    # url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: /about/
-  - title: "Sample Post"
-    url: /post-with-images/
-  - title: "Sitemap"
-    url: /sitemap/
-  - title: "Photos"
-    url: /hugo/
+  - title: "Finance"
+    url: /finance/
+  - title: "Kfz-Versicherung"
+    url: /kfz-versicherung/
+  - title: "Energie"
+    url: /energie/
+  - title: "Internet"
+    url: /internet/
 
 # documentation links
 docs:
-  - title: Getting Started
-    children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
   - title: Customization
     children:
       - title: "Configuration"
         url: /docs/configuration/
+
+kfz-versicherung:
+  - title: Kfz-Versicherung
+    children:
+      - title: "Verivox"
+        url: /kfz-versicherung/verivox/
+      - title: "Toptarif"
+        url: /kfz-versicherung/toptarif/
+      - title: "Tarifcheck24"
+        url: /kfz-versicherung/tarifcheck24/
+finance:
+  - title: Finance
+    children:
+      - title: "Haftpflichtversicherung"
+        url: /finance/haftpflichtversicherung/
+      - title: "Rechtsschutzversicherung"
+        url: /finance/rechtsschutzversicherung/
+      - title: "Hausratversicherung"
+        url: /finance/hausratversicherung/
+      - title: "Private Krankenversicherung"
+        url: /finance/private-krankenversicherung/
+      - title: "Private Krankenzusatzversicherung"
+        url: /finance/private-krankenzusatzversicherung/
+      - title: "Baufinanzierung"
+        url: /finance/baufinanzierung/
+      - title: "Ratenkredit"
+        url: /finance/ratenkredit/
+      - title: "Girokonto"
+        url: /finance/girokonto/
+      - title: "Tagesgeld"
+        url: /finance/tagesgeld/
+      - title: "Festgeld"
+        url: /finance/festgeld/
+energie:
+  - title: Energie
+    children:
+      - title: "TopTarif"
+        url: /energie/toptarif/
+      - title: "Check24"
+        url: /energie/check24/
+      - title: "Verivox"
+        url: /energie/verivox/
+internet:
+  - title: Internet
+    children:
+      - title: "TopTarif"
+        url: /internet/toptarif/
+      - title: "Check24"
+        url: /internet/check24/
+      - title: "Mobile Prepaid"
+        url: /internet/mobile-prepaid/

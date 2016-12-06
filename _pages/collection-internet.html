@@ -1,0 +1,18 @@
+---
+layout: archive
+title: "Internet"
+permalink: /internet/
+sidebar:
+  nav: "internet"
+---
+
+{% include base_path %}
+{% capture written_label %}'None'{% endcapture %}
+
+{% for collection in site.collections %}
+  {% for post in collection.docs %}
+    {% unless collection.output == false or collection.label == "posts" or collection.label != "internet" %}
+      {% include archive-single.html %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}

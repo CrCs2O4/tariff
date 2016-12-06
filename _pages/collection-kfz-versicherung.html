@@ -1,0 +1,18 @@
+---
+layout: archive
+title: "Kfz-Versicherung"
+permalink: /kfz-versicherung/
+sidebar:
+  nav: "kfz-versicherung"
+---
+
+{% include base_path %}
+{% capture written_label %}'None'{% endcapture %}
+
+{% for collection in site.collections %}
+  {% for post in collection.docs %}
+    {% unless collection.output == false or collection.label == "posts" or collection.label != "kfz-versicherung" %}
+      {% include archive-single.html %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}

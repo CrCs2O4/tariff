@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "Finance"
+permalink: /finance/
+sidebar:
+  nav: "finance"
+---
+
+{% include base_path %}
+{% capture written_label %}'None'{% endcapture %}
+
+<div class="grid__wrapper">
+{% for collection in site.collections %}
+  {% for post in collection.docs %}
+    {% unless collection.output == false or collection.label == "posts" or collection.label != "finance" %}
+      {% include archive-single.html type="grid" %}
+    {% endunless %}
+  {% endfor %}
+{% endfor %}
+</div>

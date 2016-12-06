@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Website"
+title                    : "Best Tariff"
 title_separator          : "-"
 name                     : "Chromium"
 description              : "An amazing website."
@@ -15,7 +15,7 @@ url                      : "https://crcs2o4.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-breadcrumbs              : true
+breadcrumbs              : false
 words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -231,7 +231,16 @@ compress_html:
     envs: development
 
 collections:
-  docs:
+  finance:
+    output: true
+    permalink: /:collection/:path/
+  kfz-versicherung:
+    output: true
+    permalink: /:collection/:path/
+  energie:
+    output: true
+    permalink: /:collection/:path/
+  internet:
     output: true
     permalink: /:collection/:path/
 
@@ -248,10 +257,9 @@ defaults:
       comments: # true
       share: true
       related: true
-  # _docs
   - scope:
       path: ""
-      type: docs
+      type: finance
     values:
       layout: single
       read_time: false
@@ -259,4 +267,37 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "docs"
+        nav: "finance"
+  - scope:
+      path: ""
+      type: kfz-versicherung
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "kfz-versicherung"
+  - scope:
+      path: ""
+      type: energie
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "energie"
+  - scope:
+      path: ""
+      type: internet
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "internet"
